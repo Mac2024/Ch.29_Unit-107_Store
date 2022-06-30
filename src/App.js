@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Catalog from "./components/catalog";
 import Product from "./components/product";
 import QuantityPicker from "./components/quantityPicker";
+import About from "./components/about";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar></Navbar>
       <h1>Welcome to your Baller Paradise!!!</h1>
       <Catalog></Catalog>
+      <About></About>
       <Footer></Footer>
     </div>
   );

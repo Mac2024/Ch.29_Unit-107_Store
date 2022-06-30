@@ -4,7 +4,7 @@ import Product from "./product";
 import DataService from "../services/dataService";
 
 const Catalog = () =>{
-    let [products,setProducts]= useState([]);
+    let [products, setProducts]= useState([]);
 
     const loadCatalog = () =>{
         let service = new DataService();
@@ -22,9 +22,9 @@ const Catalog = () =>{
             <h3>We have {products.length} products!</h3>
            <div className="products-container">
             {
-                products.map((prod)=>
+                products.map((prod)=>(
                 <Product key={prod.id} data={prod}></Product>)
-            }
+            )}
         </div>
         </div>
     );
